@@ -20,5 +20,4 @@ jobs:
         local-dir: ./src/
         server-dir: /lauto.com.ua/
     - name: Set permissions on .ftp-deploy-sync-state.json
-        if: ${{ success() }}
         run: chmod 600 .ftp-deploy-sync-state.json
